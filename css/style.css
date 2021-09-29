@@ -1,0 +1,111 @@
+
+.bodyBGColor{
+    background-color: cornsilk;
+}
+
+.navbarColor{
+    background-color: rgb(82, 9, 9);
+}
+
+.fontType{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: left;
+    padding-left: 1rem;
+}
+
+.fontColor{
+    color:rgb(82, 9, 9);
+    font-size: 2rem;
+}
+
+.titleFontFotmat{
+    font-size: 1.5rem;
+}
+
+.colorNavWord {
+    color:cornsilk;
+    display: block;
+    text-align: left;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+div{
+    text-align: right;
+}
+
+.grid-container{
+    display: grid;
+    background-color: cornsilk;
+    height: 6rem;
+}
+
+
+footer{
+    background-color: rgb(82, 9, 9);
+    height: 6rem;
+}
+
+.footer-container{
+    height: 6rem;
+    list-style: none;
+    display: grid;
+  /* grid-auto-columns: auto; */
+    /* grid-template-columns: auto auto auto; */
+    grid-template-areas:
+    'logo logo logo titulo titulo titulo espacio espacio espacio redes redes' 
+    'logo logo logo titulo titulo titulo espacio espacio espacio face instagram';   
+}
+
+.footer-container div{
+    /* padding-top: 1.5rem; */
+    /* align-items: center;
+    align-content: center; */
+    /* border: 1px solid black; */
+    text-align: center;
+    align-content: center;
+}
+
+.footitem1{
+    grid-area: logo;
+}
+
+.footitem2{
+    grid-area: titulo;
+}
+
+.footitem3{
+    grid-area: redes;
+}
+
+.footitem4{
+    grid-area: face;
+}
+
+.footitem5{
+    grid-area: instagram;
+}
+
+.footitem6{
+    grid-area: espacio;
+}
+
+
+.textFooter{
+    color: cornsilk;
+    font-size: 0.7rem;
+    text-align: center;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    justify-content: center;
+}
+
+.imgpad{
+    padding: 0.7rem;
+    justify-content: center;
+}
+
+.logopad{
+    padding-bottom: 1rem;
+    justify-content: center;
+}
