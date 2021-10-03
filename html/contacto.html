@@ -5,18 +5,150 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IDI - Contacto</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/img/Logo.jpg" />
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
 </head>
-<body>
-    <div class="mapouter">
-        <div class="gmap_canvas">
-          <iframe width="400" height="350" id="gmap_canvas" src="https://maps.google.com/maps?q=figueredo%202250&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
-          </iframe>
-          <a href="https://123movies-to.org">123 movies</a>
-          <br>
-          <style>.mapouter{position:relative;text-align:right;height:350px;width:400px;}</style>
-          <a href="https://www.embedgooglemap.net">google maps embed generator</a>
-          <style>.gmap_canvas {overflow:hidden;background:none!important;height:350px;width:400px;}</style>
+<body class="bodyBGColor">
+
+  <div>
+    <!-- ################################# Inicio: Menu de navegación ################################# -->
+      <nav class="navbar navbar-expand-lg navbar-dark navbarColor">
+        <div class="container-fluid">
+          <a class="colorNavWord" href="../index.html"> <img src="../assets/img/Logo.jpg" alt="10"> </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-0 mb-lg-0">
+              <li class="nav-item">
+                <a class="colorNavWord active" aria-current="page" href="../index.html">
+                  Inicio
+                </a>
+              </li>
+              <a class="colorNavWord dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Idiomas
+              </a>
+              <ul class="dropdown-menu navbarColor" aria-labelledby="navbarDropdown">
+                <li><a class="colorNavWord" href="../html/frances.html">Francés</a></li>
+                <li><a class="colorNavWord" href="../html/ingles.html">Inglés</a></li>
+                <li><a class="colorNavWord" href="../html/italiano.html">Italiano</a></li>
+                <li><a class="colorNavWord" href="../html/portuges.html">Portugués</a></li>
+              <!-- <li><hr class="dropdown-divider" /></li> -->
+              <li><a class="dropdown-item disabled" href="#">Alemán</a></li>
+            </ul>
+            <li class="nav-item">
+              <a class="colorNavWord active" href="#">Niveles</a>
+            </li>
+              <li class="nav-item">
+                <a class="colorNavWord active" href="#">Nuestra hisotria</a>
+              </li>
+              <li class="nav-item">
+                <a class="colorNavWord active" href="#">Sobre nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="colorNavWord active" href="#">Contacto</a>
+              </li>
+          </div>
         </div>
+      </nav>
+    </div>
+  </div>
+    <!-- ################################# Fin: Menu de navegación ################################# -->
+
+    <!-- ################################# Inicio: Cuerpo ################################# -->
+    <div>
+      <h1 class="fontColor fontType">
+        <br>
+        ¿Donde podes encontrarnos?
+      </h1>
+    </div>
+    <div>
+      <p class="fontType">
+        Nuestra casa de estudios se encuentra en: <br>
+        Calle: Nicolas Figeredo N°:2250 <br>
+        Ciudad de San Justo, Provincia de Santa Fe. <br>
+        Si queres contactarte con nosostros, lo podes hacer por: <br>
+        <ul class="fontType">
+          <li>
+             - E-Mail: idi@sanjustosf.com.ar
+          </li>
+          <li>
+             - Teléfono: (+54) 03498-426906
+          </li>
+          <li>
+             - Personalmente: Estamos abiertos de lunes a jueves de 13:00 a 21:00 hs. <br>
+               (de marzo a diciembre inclusive).
+          </li>
+        </ul>
+         
+      </p>
+    </div>
+    <div>
+      <h3 class="titleFontFormat fontType">
+        Aquí te dejamos un mapa
+      </h3>
+    </div>
+    <!-- ################################# Fin: Cuerpo ################################# -->
+
+    <!-- ################################# Inicio: Mapa ################################# -->
+    <div class="mapouter mapawidth">
+      <div class="gmap_canvas">
+        <iframe width="400" height="350" id="gmap_canvas" src="https://maps.google.com/maps?q=figueredo%202250&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+        </iframe>
+        <br>
+        <style>.mapouter{position:relative;text-align:center;height:350px;width:400px;}</style>
+        <a href="https://www.embedgooglemap.net">google maps embed generator</a>
+        <style>.gmap_canvas {overflow:hidden;background:none!important;height:350px;width:400px;}</style>
       </div>
+    </div>
+    <!-- ################################# Fin: Mapa ################################# -->
+
+    <!-- ################################# Inicio: FOOTER ################################# -->
+    <footer>
+      <ul class="footer-container">
+        <div class="footitem1">
+          <li class="textFooter">
+              <a href="/index.html"><img class="logopad" src="../assets/img/Logo.jpg" alt="10"> </a>
+          </li>
+        </div>
+        <div class="footitem2">
+          <li>
+            <h2 class="textFooter">
+              Asociación Civil: Instituto de Idiomas "Graciela A. de Martínez"
+            </h2>
+          </li>
+        </div>
+        <div class="footitem3">
+          <li>
+            <h2 class="textFooter">
+              Seguinos en nuestras redes sociales
+            </h2>
+            <a href="https://www.facebook.com/instituto.deidiomas.5 " target="_blank"><img class = "imgpad" src="../assets/img/Facebook-icon.jpg" alt=""></a>
+            <a href="https://www.instagram.com/idisanjusto/?hl=es" target="_blank"><img class = "imgpad" src="../assets/img/Instagram-icon.jpg" alt=""></a>
+          </li>
+        </div>
+      </ul>
+    </footer>
+    <!-- ################################# Fin: FOOTER ################################# -->
+
+    
+
+
 </body>
+<script
+src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp"
+crossorigin="anonymous"
+></script>
+<script src="../bootstrap/js/bootstrap.min.js"></script>
 </html>

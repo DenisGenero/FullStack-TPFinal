@@ -43,18 +43,24 @@ div{
 
 footer{
     background-color: rgb(82, 9, 9);
-    height: 6rem;
+    height: auto;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+}
+
+ul{
+    list-style: none;
 }
 
 .footer-container{
-    height: 6rem;
     list-style: none;
     display: grid;
+    height: auto;
   /* grid-auto-columns: auto; */
     /* grid-template-columns: auto auto auto; */
     grid-template-areas:
-    'logo logo logo titulo titulo titulo espacio espacio espacio redes redes' 
-    'logo logo logo titulo titulo titulo espacio espacio espacio face instagram';   
+    'logo titulo redes'
 }
 
 .footer-container div{
@@ -68,10 +74,12 @@ footer{
 
 .footitem1{
     grid-area: logo;
+    padding: 0.8rem;
 }
 
 .footitem2{
     grid-area: titulo;
+    padding: 1.4rem;
 }
 
 .footitem3{
@@ -82,12 +90,13 @@ footer{
     grid-area: face;
 }
 
-.footitem5{
-    grid-area: instagram;
-}
-
 .footitem6{
     grid-area: espacio;
+    padding: 1rem;
+}
+
+.mapawidth{
+    width: 100%;
 }
 
 
