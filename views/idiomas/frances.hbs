@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title> IDI - Francés </title>
+    {{> links}}
+  </head>
+  <body class="bodyBGColor">
+
+    <!-- Header -->
+    <header>
+        <img src="../assets/img/Frances/bandera.jpg" class="d-block w-100" alt="10">
+    </header>
+
+    <!-- Navbar -->
+    {{> navbar}}
+
+    <!-- ################################# Inicio: Cuerpo de la página ################################# -->
+    <div>
+      <br>
+      <h1 class="fontColor fontType"> Idioma Francés</h1>
+      <p class="fontType">
+        En nuestra casa de estudios te brindamos la posibilidad de que aprendas el idioma francés... ¡El quinto idioma más hablado a nivel mundial! 
+      </p>
+      <br>
+      <h3 class="fontType titleFontFotmat">
+        ¿Sabías qué...
+      </h3>
+      <p class="fontType">
+        El idioma francés no sólo se habla en Francia, sino que en muchos otros paises europeos como Bélgica, Suiza o Luxemburgo. Además también es hablado en paises de América como Canada y Estados Unidos, y en África en paises como Costa de Marfíl y Marruecos.
+        <br>
+        Según la Organización Internacional de la francofonía, se calcula que hay aproximadamente 300 millones de personas que lo hablan.
+      </p>
+      <br>
+      <!-- Button trigger modal -->
+      <button class="btn btn-primary d-block ms-3" data-toggle="modal" data-target="#myModalAdd">Practica Francés!</button>
+      <div>
+        <form action="/save" method="post">
+          <div class="modal fade" id="myModalAdd" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Suscribite a nuestra Web</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="form-group">
+                    <input type="text" name="nombre" class="form-control" placeholder="Ingresa tu nombre" required>
+                  </div>
+                  <br>
+                  <div class="form-group">
+                    <input type="text" name="apellido" class="form-control" placeholder="Ingresa tu apellido" required>
+                  </div>
+                  <br>
+                  <div class="form-group">
+                    <input type="text" name="edad" class="form-control" placeholder="Ingresa tu edad" required>
+                  </div>
+                  <br>
+                  <div class="form-group">
+                    <input type="text" name="mail" class="form-control" placeholder="Ingresa tu mail" required>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                  <button type="submit" class="btn btn-primary">Guardar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <div>
+        <br>
+        <h3 class="fontType titleFontFotmat">
+          Aquí te compartimos algunos datos de Francia
+        </h3>
+      </div>
+      <div class="body-container">
+        <div class="textoFrances">
+          <p class="fontType">
+            Francia es el país con la extención territorial más grande de la Unión europea. Su capital es la famosa ciudad de Paris, y limita con muchos paises por ejemplo Alemania, Bélgica, España y Suiza, así como también con el oceano Atlántico y el mar Mediterraneo.
+            La ciudad de Paris es mundialmente reconocida no solo por la Torre Eiffel, sino que ademas por otras famosas construcciones como la Catedral de Notre Dame, cuya construcción tomo casi 100 años en llevarse a cabo, y fue terminada en el año 1260.
+            <br>
+            Otros edificios con gran valor histórico y cultural son el museo de Louvre, en el cual se pueden encontrar colecciones de obras de arte, objetos y antigüedades. También se puede encontrar el "Arc du triomphe" o Arco del Triunfo, que es una obra arquitectónica construída por órden del mismo Napoleon Bonaparte.
+            <br>
+            El famoso Río Sena, es el tercero más largo de Francia, con una longitud aproximada de 776 Km, y atravieza la ciudad de París.
+          </p>
+        </div>
+        <div class="imagenFrances">
+          <img src="/assets/img/Frances/Mapa2.jpg" class="w-100" alt="">
+        </div>
+        <div class="imagenFrances2">
+          <img src="assets/img/Frances/Louvre.jpg" class="w-75" alt="">
+          <p>Museo de Louvre</p>
+        </div>
+        <div class="imagenFrances3">
+          <img src="assets/img/Frances/TorreEiffel.jpg" class="w-75" alt="">
+          <p>Torre Eiffel</p>
+        </div>
+        <div class="imagenFrances4">
+          <img src="assets/img/Frances/ArcoTriunfo.jpg" class="w-75" alt="">
+          <p>Arco del Triunfo</p>
+        </div>
+        <div class="imagenFrances5">
+          <img src="assets/img/Frances/NotreDame.jpg"  class="w-75" alt="">
+          <p>Catedral de Notre Dame</p>
+        </div>
+        <div class="imagenFrances6">
+          <img src="assets/img/Frances/MapaRioSena.jpg" class="w-75"  alt="">
+          <p>Mapa del Río Sena</p>
+        </div>
+        <div class="imagenFrances7">
+          <img src="assets/img/Frances/RioSena.jpg" class="w-75" alt="">
+          <p>Río Sena</p>
+        </div>
+      </div>
+    </div>
+    <!-- ################################# Fin: Cuerpo de la página ################################# -->
+
+    <!-- Footer -->
+    {{> footer}}
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script>
+      $(document).ready(function(){
+        //Mostrar datos al modal para editar registro
+        $('#mytable').on('click', '.edit', function(){
+            //let suscriptor_id = $(this).data('suscriptor_id');
+            let nombre = $(this).data('nombre');
+            let apellido = $(this).data('apellido');
+            let edad = $(this).data('edad');
+            let mail = $(this).data('mail');
+            $('#EditModal').modal('show');
+            //$('.suscriptor_id').val(suscriptor_id);
+            $('.nombre').val(nombre);
+            $('.apellido').val(apellido);
+            $('.edad').val(edad);
+            $('.mail').val(mail);                    
+        })
+    
+    })
+    </script>
+
+  </body>
+
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IDI - Contacto</title>
+    {{> links}}
+  </head>
+</head>
+<body class="bodyBGColor">
+  <!-- Navbar -->
+  {{> navbar}}
+
+  <div class="contacto-container">
+    <!-- ################################# Inicio: Cuerpo ################################# -->
+    <div>
+      <h1 class="fontColor fontType contactoTitulo1">
+        <br>
+        ¿Donde podes encontrarnos?
+        <br>
+      </h1>
+    </div>
+    <div class="contactoTexto">
+      <p class="fontType">
+        <br>
+        Nuestra casa de estudios se encuentra en: <br>
+        Calle: Nicolas Figeredo N°:2250 <br>
+        Ciudad de San Justo, Provincia de Santa Fe. <br>
+        Si queres contactarte con nosostros, lo podes hacer por: <br>
+      <ul class="fontType">
+        <li>
+          - E-Mail: idi@sanjustosf.com.ar
+        </li>
+        <li>
+          - Teléfono: (+54) 03498-426906
+        </li>
+        <li>
+          - Personalmente: Estamos abiertos de lunes a jueves de 13:00 a 21:00 hs. <br>
+          (de marzo a diciembre inclusive).
+        </li>
+      </ul>
+      </p>
+    </div>
+    <div>
+      <h1 class="fontColor fontType">
+        <br>
+        Aquí te dejamos un mapa
+        <br>
+      </h1>
+    </div>
+      <!-- ################################# Fin: Cuerpo ################################# -->
+  
+      <!-- ################################# Inicio: Mapa ################################# -->
+    <div class="contactoMapa">
+      <div class="mapouter mapawidth">
+        <div class="gmap_canvas">
+          <iframe width="400" height="350" id="gmap_canvas"
+            src="https://maps.google.com/maps?q=figueredo%202250&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0"
+            scrolling="no" marginheight="0" marginwidth="0">
+          </iframe>
+          <br>
+          <style>
+            .mapouter {
+              position: relative;
+              text-align: center;
+              height: 350px;
+              width: 400px;
+            }
+          </style>
+          <a href="https://www.embedgooglemap.net">google maps embed generator</a>
+          <style>
+            .gmap_canvas {
+              overflow: hidden;
+              background: none !important;
+              height: 350px;
+              width: 400px;
+            }
+          </style>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ################################# Fin: Mapa ################################# -->
+
+  <!-- Footer -->
+  {{> footer}}
+
+</body>
+
+</html>

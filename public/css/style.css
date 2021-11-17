@@ -1,0 +1,236 @@
+.bodyBGColor{
+    background-color: cornsilk;
+    height: 100vh;
+}
+
+.navbarColor{
+    background-color: rgb(82, 9, 9);
+}
+
+.fontType{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: left;
+    padding-left: 1rem;
+}
+
+.fontColor{
+    color:rgb(82, 9, 9);
+    font-size: 2rem;
+}
+
+.titleFontFotmat{
+    font-size: 1.5rem;
+}
+
+.colorNavWord {
+    color:cornsilk;
+    display: block;
+    text-align: left;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+div{
+    text-align: right;
+}
+
+.grid-container{
+    display: grid;
+    background-color: cornsilk;
+    height: 6rem;
+}
+
+footer{
+    background-color: rgb(82, 9, 9);
+    height: auto;
+    text-align: center;
+    margin-bottom: 0;
+    /* position: absolute; */
+    width: 100%;
+}
+
+ul{
+    list-style: none;
+}
+
+.footer-container{
+    list-style: none;
+    display: grid;
+    height: auto;
+  /* grid-auto-columns: auto; */
+    /* grid-template-columns: auto auto auto; */
+    grid-template-areas:
+    'logo titulo redes'
+}
+
+.footer-container div{
+    /* padding-top: 1.5rem; */
+    /* align-items: center;
+    align-content: center; */
+    /* border: 1px solid black; */
+    text-align: center;
+    align-content: center;
+}
+
+.footitem1{
+    grid-area: logo;
+    padding: 0.8rem;
+}
+
+.footitem2{
+    grid-area: titulo;
+    padding: 1.4rem;
+}
+
+.footitem3{
+    grid-area: redes;
+}
+
+.footitem4{
+    grid-area: face;
+}
+
+.footitem6{
+    grid-area: espacio;
+    padding: 1rem;
+}
+
+.mapawidth{
+    width: 100%;
+}
+
+.textFooter{
+    color: cornsilk;
+    font-size: 0.7rem;
+    text-align: center;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    justify-content: center;
+}
+
+.imgpad{
+    padding: 0.7rem;
+    justify-content: center;
+}
+
+.logopad{
+    padding-bottom: 1rem;
+    justify-content: center;
+}
+
+/* .body-container{
+    grid-template-areas:
+    'parrafo parrafo',
+    'imagen imagen',
+    'imagen2 imagen3',
+    'imagen4 imagen5',
+    'imagen6 imagen7';
+} */
+
+
+
+/*.body-container{
+    display: grid;*/
+    /* height: auto; 
+    /* grid-template-rows:
+    'parrafo parrafo parrafo imagen imagen',
+    'imagen2 imagen3 imagen4 imagen imagen',
+    'imagen5 imagen6 imagen7 imagen imagen';
+}*/
+
+.textoFrances{
+    grid-area: parrafo;
+}
+
+.imagenFrances{
+    grid-area: imagen;
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+}
+
+.imagenFrances2{
+    grid-area: imagen2;
+    text-align: center;
+}
+
+.imagenFrances3{
+    grid-area: imagen3;
+    text-align: center;
+}
+
+.imagenFrances4{
+    grid-area: imagen4;
+    text-align: center;
+}
+
+.imagenFrances5{
+    grid-area: imagen5;
+    text-align: center;
+}
+
+.imagenFrances6{
+    grid-area: imagen6;
+    text-align: center;
+}
+
+.imagenFrances7{
+    grid-area: imagen7;
+    text-align: center;
+}
+
+.body-container{
+    display: grid;
+    height: auto;
+    grid-template-areas:
+    'parrafo parrafo parrafo imagen imagen',
+    'imagen2 imagen3 imagen4 imagen imagen',
+    'imagen5 imagen6 imagen7 imagen imagen';
+}
+
+/* Grid para el body de las páginas */
+/* @media (min-width: 800px){
+    .body-container{
+        grid-template-areas:
+        'parrafo parrafo parrafo imagen imagen',
+        'imagen2 imagen3 imagen4 imagen imagen',
+        'imagen5 imagen6 imagen7 imagen imagen';
+    }
+} */
+
+/* @media all and (max-width: 800px){
+    .body-container{
+        grid-template-areas:
+        'parrafo parrafo',
+        'imagen imagen',
+        'imagen2 imagen3',
+        'imagen4 imagen5',
+        'imagen6 imagen7';
+    }
+} */
+
+/* Grid para contactos*/
+/*@media (min-width: 800px) {
+    .contacto-container{
+        display: grid;
+        height: auto;
+        grid-template-areas:
+        "titulo1 titulo2" 
+        "texto mapa";
+    }
+}
+
+.contactoTitulo1{
+    grid-area: titulo1;
+}
+
+.contactoTitulo2{
+    grid-area: titulo2;
+}
+
+.contactoTexto{
+    grid-area: texto;
+}
+
+.contactoMapa{
+    grid-area: mapa;
+} */

@@ -1,0 +1,27 @@
+{
+  "name": "WebTPFinalNode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DenisGenero/FullStack-TPFinal.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DenisGenero/FullStack-TPFinal/issues"
+  },
+  "homepage": "https://github.com/DenisGenero/FullStack-TPFinal#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "hbs": "^4.1.2",
+    "mysql": "^2.18.1",
+    "path": "^0.12.7"
+  }
+}
