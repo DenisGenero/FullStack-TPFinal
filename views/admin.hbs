@@ -9,52 +9,58 @@
         {{> links}}
     </head>
 
-    <body class="bodyBGColor">
-        {{> navbar}}
-        <div class="container p-4">
-            <h2 class="fontColor fontType"> Lista de suscriptores</h2>
-            <table class="table table-striped" id="mytable">
-                <thead class="fontType titleFontFotmat">
-                    <th> Id del suscriptor</th>
-                    <th> Nombre</th>
-                    <th> Apellido</th>
-                    <th> Edad </th>
-                    <th> Mail</th>
-                </thead>
-                <tbody>
-                    {{#each results}}
-                    <tr class="fontType">
-                        <td> {{suscriptor_id }}</td>
-                        <td> {{nombre}}</td>
-                        <td> {{apellido}}</td>
-                        <td> {{edad}}</td>
-                        <td> {{mail}}</td>
-                    </tr>
-                    {{/each}}
-                </tbody>
-            </table>
-        </div>
+<body class="bodyBGColor">
+    <!-- Header -->
+    <header>
+        <img src="/assets/img/Admin.jpg" class="d-block w-100" alt="10">
+    </header>
+    
+    <!-- Navbar -->
+    {{> navbar}}
 
-        <script>
-            $(document).ready(function(){
-                //Mostrar datos al modal para editar registro
-                $('#mytable').on('click', '.edit', function(){
-                    let suscriptor_id = $(this).data('id');
-                    let nombre = $(this).data('nombre');
-                    let apellido = $(this).data('apellido');
-                    let edad = $(this).data('edad');
-                    let mail = $(this).data('mail');
-                    $('#EditModal').modal('show');
-                    $('.suscriptor_id').val(suscriptor_id);
-                    $('.nombre').val(nombre);
-                    $('.apellido').val(apellido);
-                    $('.edad').val(edad);
-                    $('.mail').val(mail);                    
-                })
-            
+    <div class="container p-4">
+        <h2 class="fontColor fontType"> Lista de suscriptores</h2>
+        <table class="table table-striped" id="mytable">
+            <thead class="fontType titleFontFotmat">
+                <!-- <th> Id del suscriptor</th> -->
+                <th> Nombre</th>
+                <th> Apellido</th>
+                <th> Edad </th>
+                <th> Mail</th>
+            </thead>
+            <tbody>
+                {{#each results}}
+                <tr class="fontType">
+                    <!-- <td> {{suscriptor_id }}</td> -->
+                    <td> {{nombre}}</td>
+                    <td> {{apellido}}</td>
+                    <td> {{edad}}</td>
+                    <td> {{mail}}</td>
+                </tr>
+                {{/each}}
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        $(document).ready(function(){
+            //Mostrar datos al modal para editar registro
+            $('#mytable').on('click', '.edit', function(){
+                // let suscriptor_id = $(this).data('id');
+                let nombre = $(this).data('nombre');
+                let apellido = $(this).data('apellido');
+                let edad = $(this).data('edad');
+                let mail = $(this).data('mail');
+                $('#EditModal').modal('show');
+                // $('.suscriptor_id').val(suscriptor_id);
+                $('.nombre').val(nombre);
+                $('.apellido').val(apellido);
+                $('.edad').val(edad);
+                $('.mail').val(mail);                    
             })
-        </script>
-        {{> footer}}
-
-    </body>
+        
+        })
+    </script>
+    {{> footer}}
+</body>
 </html>

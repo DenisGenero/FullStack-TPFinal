@@ -34,6 +34,58 @@ div{
     text-align: right;
 }
 
+.index-container{
+    display: grid;
+    grid-template-areas:
+    'texto1 texto1'
+    'foto1 foto1'
+    'texto2 texto2'
+    'foto2 foto3';
+}
+
+@media (min-width: 800px){
+
+    .index-container{
+        display: grid;
+        grid-template-areas:
+        'texto1 foto1'
+        'texto2 foto2'
+        'texto2 foto3';
+}
+}
+
+.textoIndex1{
+    grid-area: texto1;
+}
+
+.textoIndex2{
+    grid-area: texto2;
+}
+
+.fotoIndex1{
+    grid-area: foto1;
+    align-content: center;
+    margin-right: 5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.fotoIndex2{
+    grid-area: foto2;
+    align-content: center;
+    margin-right: 5rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.fotoIndex3{
+    grid-area: foto3;
+    align-content: center;
+    margin-right: 5rem;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+
 .grid-container{
     display: grid;
     background-color: cornsilk;
@@ -42,10 +94,22 @@ div{
 
 footer{
     background-color: rgb(82, 9, 9);
-    height: auto;
+    height: 6rem;
     text-align: center;
+    position: absolute;
+    bottom: -10;
+    padding-bottom: 0;
     margin-bottom: 0;
-    /* position: absolute; */
+    width: 100%;
+}
+
+.footer2{
+    background-color: rgb(82, 9, 9);
+    height: 6rem;
+    text-align: center;
+    bottom: 0;
+    margin-bottom: 0;
+    position: absolute;
     width: 100%;
 }
 
@@ -118,25 +182,30 @@ ul{
     justify-content: center;
 }
 
-/* .body-container{
+.body-container{
+    display: grid;
+    height: auto;
     grid-template-areas:
-    'parrafo parrafo',
-    'imagen imagen',
-    'imagen2 imagen3',
-    'imagen4 imagen5',
-    'imagen6 imagen7';
-} */
+    'parrafo parrafo'
+    'imagen imagen'
+    'imagen2 imagen3'
+    'imagen4 imagen5'
+    'imagen6 imagen7'
+}
 
+@media(min-width: 800px){
+    .body-container{
+        grid-template-areas:
+        'parrafo parrafo parrafo imagen imagen'
+        'imagen2 imagen3 imagen4 imagen imagen'
+        'imagen5 imagen6 imagen7 imagen imagen'
+    }
+    .imagenFrances{
+        padding-bottom: 1rem;
+        padding-right: 1rem;
 
-
-/*.body-container{
-    display: grid;*/
-    /* height: auto; 
-    /* grid-template-rows:
-    'parrafo parrafo parrafo imagen imagen',
-    'imagen2 imagen3 imagen4 imagen imagen',
-    'imagen5 imagen6 imagen7 imagen imagen';
-}*/
+    }
+}
 
 .textoFrances{
     grid-area: parrafo;
@@ -144,7 +213,8 @@ ul{
 
 .imagenFrances{
     grid-area: imagen;
-    padding-bottom: 1rem;
+    text-align: center;
+    padding-left: 1rem;
     padding-right: 1rem;
 }
 
@@ -178,38 +248,21 @@ ul{
     text-align: center;
 }
 
-.body-container{
-    display: grid;
-    height: auto;
-    grid-template-areas:
-    'parrafo parrafo parrafo imagen imagen',
-    'imagen2 imagen3 imagen4 imagen imagen',
-    'imagen5 imagen6 imagen7 imagen imagen';
-}
 
 /* Grid para el body de las páginas */
 /* @media (min-width: 800px){
     .body-container{
         grid-template-areas:
-        'parrafo parrafo parrafo imagen imagen',
-        'imagen2 imagen3 imagen4 imagen imagen',
-        'imagen5 imagen6 imagen7 imagen imagen';
+        'parrafo parrafo parrafo imagen imagen'
+        'imagen2 imagen3 imagen4 imagen imagen'
+        'imagen5 imagen6 imagen7 imagen imagen'
     }
 } */
 
-/* @media all and (max-width: 800px){
-    .body-container{
-        grid-template-areas:
-        'parrafo parrafo',
-        'imagen imagen',
-        'imagen2 imagen3',
-        'imagen4 imagen5',
-        'imagen6 imagen7';
-    }
-} */
+
 
 /* Grid para contactos*/
-/*@media (min-width: 800px) {
+@media (min-width: 800px) {
     .contacto-container{
         display: grid;
         height: auto;
@@ -233,4 +286,4 @@ ul{
 
 .contactoMapa{
     grid-area: mapa;
-} */
+}

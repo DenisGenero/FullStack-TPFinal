@@ -50,7 +50,7 @@ app.post('/save', (req, res) => {
   let sql = "INSERT INTO suscriptores SET ?";
   let query = conn.query(sql, data, (err, results) => {
       if (err) throw err;
-      res.redirect('/');
+      res.redirect('/formulario');
   });
 });
 
@@ -66,6 +66,10 @@ app.get('/contacto', function(req, res) {
   res.render("contacto")
 });
 
+app.get('/historia', function(req,res) {
+  res.render('historia')
+})
+
 app.get('/frances', function(req, res) {
   res.render('idiomas/frances')
 })
@@ -79,7 +83,11 @@ app.get('/italiano', function(req, res) {
 })
 
 app.get('/portugues', function(req, res) {
-  res.render('idiomas/portuges')
+  res.render('idiomas/portugues')
+})
+
+app.get('/formulario', function(req, res) {
+  res.render('formulario')
 })
 
 app.get('/admin', function(req, res) {
